@@ -78,6 +78,8 @@
 #define AID_SDCARD_ALL    1035  /* access all users external storage */
 #define AID_AUDIT         1036  /* audit daemon */
 
+#define AID_THEMEMAN      1300  /* theme manager */
+
 #define AID_SHELL         2000  /* adb and debug shell user */
 #define AID_CACHE         2001  /* cache access */
 #define AID_DIAG          2002  /* access to diagnostic resources */
@@ -166,6 +168,7 @@ static const struct android_id_info android_ids[] = {
     { "clat",          AID_CLAT, },
     { "loop_radio",    AID_LOOP_RADIO, },
     { "mediadrm",      AID_MEDIA_DRM, },
+    { "theme_man",     AID_THEMEMAN },
     { "package_info",  AID_PACKAGE_INFO, },
     { "sdcard_pics",   AID_SDCARD_PICS, },
     { "sdcard_av",     AID_SDCARD_AV, },
@@ -204,6 +207,7 @@ static const struct android_id_info android_ids[] = {
 
     { "misc",          AID_MISC, },
     { "nobody",        AID_NOBODY, },
+    { "theme_man", AID_THEMEMAN },
     { "audit",      AID_AUDIT, },
 };
 
